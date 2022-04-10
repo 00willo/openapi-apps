@@ -17,6 +17,35 @@ docs/discord.md ## OR without md (below)
 docs/discord
 ```
 
+This repo uses the [pre-commit framework](https://pre-commit.com).
+
+Install pre-commit
+```
+# Linux and Windows
+pip install pre-commit
+
+# macOS
+brew install pre-commit
+```
+
+```
+git clone https://github.com/Shuffle/openapi-apps
+cd openapi-apps
+
+# Only needs to be done once, in each clone.
+pre-commit install
+
+git checkout -b new-openapi-api
+
+# make your code and changes.
+
+# optionally run pre-commit periodically during development workflow
+pre-commit run --all-files
+
+# pre-commit will run as part of commit
+git commit
+```
+
 ## Goal
 1. Help standardize the API's for each TYPE of product (alerts, tickets)
 2. Not having to write custom python code for everything I automate anymore
