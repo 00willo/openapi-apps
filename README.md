@@ -1,3 +1,5 @@
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
 # Open security apis
 A directory to be used for OpenAPI specifications used by the security industry. Some are made by me, while other's are contributed or gathered by others.
 
