@@ -2969,7 +2969,7 @@ paths:
       summary: Share a Case
       operationId: Share_a_Case
       description: >-
-        Share the case with other organisations. 
+        Share the case with other organisations.
 
         For each organisation, you can define a profile (level of access) that the org will receive
 
@@ -3014,7 +3014,7 @@ paths:
       summary: Set shares for Case
       operationId: Set_shares_for_Case
       description: >-
-        Set the share for a case with other organisations. 
+        Set the share for a case with other organisations.
 
         For each organisation, you can define a profile (level of access) that the org will receive
 
@@ -5608,7 +5608,7 @@ paths:
       summary: Query API
       operationId: Query_API
       description: >+
-        
+
         ### Overview
 
 
@@ -5751,39 +5751,39 @@ paths:
         Available filters:
 
 
-        - `_and`: `{"_and": [...other filters] }` 
+        - `_and`: `{"_and": [...other filters] }`
 
-        - `_or`: `{"_or": [...other filters] }` 
+        - `_or`: `{"_or": [...other filters] }`
 
-        - `_not`: `` 
+        - `_not`: ``
 
-        - `_any`: `` 
+        - `_any`: ``
 
-        - `_lt`: `{"_lt": {"_field": "<field>", "_value": <value>}` 
+        - `_lt`: `{"_lt": {"_field": "<field>", "_value": <value>}`
 
-        - `_gt`: `{"_gt": {"_field": "<field>", "_value": <value>}` 
+        - `_gt`: `{"_gt": {"_field": "<field>", "_value": <value>}`
 
         - `_lte`: `{"_lte": {"_field": "<field>", "_value": <value>}`
 
         - `_gte`: `{"_gte": {"_field": "<field>", "_value": <value>}`
 
-        - `_ne`: `{"_ne": {"_field": "<field>", "_value": <value>}` 
+        - `_ne`: `{"_ne": {"_field": "<field>", "_value": <value>}`
 
-        - `_eq`: `{"_eq": {"_field": "<field>", "_value": <value>}` 
+        - `_eq`: `{"_eq": {"_field": "<field>", "_value": <value>}`
 
         - `_is`: `{"_is": {"_field": "<field>", "_value": <value>}` - same as `_eq`
 
-        - `_startsWith`: `{"_startsWith": {"_field": "<field>", "_value": "<value>"}` 
+        - `_startsWith`: `{"_startsWith": {"_field": "<field>", "_value": "<value>"}`
 
         - `_endsWith`: `{"_endsWith": {"_field": "<field>", "_value": "<value>"}`
 
-        - `_id`: `{"_id": "~123"}` 
+        - `_id`: `{"_id": "~123"}`
 
-        - `_between`: `{"_between": {"_field": "<field>", "from": <from>, "to": <to>}}` 
+        - `_between`: `{"_between": {"_field": "<field>", "from": <from>, "to": <to>}}`
 
-        - `_in`: `{"_in": {"_field": "<field>", "_values": [<value1>, ...] }}` 
+        - `_in`: `{"_in": {"_field": "<field>", "_values": [<value1>, ...] }}`
 
-        - `_contains`: `{"_contains": "<field>"}` if an object contains this field 
+        - `_contains`: `{"_contains": "<field>"}` if an object contains this field
 
         - `_like`: `{"_like": {"_field": "<field>", "_value": "<value>"}`
 
@@ -5806,7 +5806,7 @@ paths:
 
         - Ask for extra data with the object:
           `{"_name": "page", "from": 0, "to": 30, "extraData": ["shareCount", "contributors"] }`
-          
+
           The `extraData` field of the object will contain a json object with the selected fields.
           The available `extraData` depends on the entity being requested.
 

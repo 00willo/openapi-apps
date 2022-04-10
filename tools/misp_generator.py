@@ -6,7 +6,7 @@ project_name = "misp"
 items = []
 
 openapi = {
-    "openapi": "3.0.2", 
+    "openapi": "3.0.2",
     "info": {
         "title": "MISP",
         "description": "Generated from CIRCL API docs",
@@ -19,7 +19,7 @@ openapi = {
     },
     "paths": {},
     "components": {
-        "schemas": {}, 
+        "schemas": {},
         "securitySchemes": {
             "ApiKeyAuth": {
                 "type": "apikey",
@@ -85,7 +85,7 @@ with open("%s.txt" % project_name, "r") as tmp:
                     "name": curline.split(" ")[1],
                     "required": True,
                     "schema": {"type": "string"},
-                }) 
+                })
 
             openapi["paths"][newitem["path"]][newitem["method"]]["parameters"] = parameters
         elif "Output" in item:

@@ -9,7 +9,7 @@ To send/post messagges on Slack groups and private chats.
 
 1. Slack account
 2. A Slack bot app with premssion to post message in chat
-3. Api key for authentication. 
+3. Api key for authentication.
 
 ## Setup
 

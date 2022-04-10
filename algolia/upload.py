@@ -125,5 +125,5 @@ res = index.save_objects(all_objects, {'autoGenerateObjectIDIfNotExist': False})
 print(res)
 #    {'firstname': 'Jimmie', 'lastname': 'Barninger'},
 #    {'firstname': 'Warren', 'lastname': 'Speach'}
-#], 
+#],
 #print(res)

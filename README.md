@@ -1,5 +1,5 @@
 # Open security apis
-A directory to be used for OpenAPI specifications used by the security industry. Some are made by me, while other's are contributed or gathered by others. 
+A directory to be used for OpenAPI specifications used by the security industry. Some are made by me, while other's are contributed or gathered by others.
 
 [OpenAPI website](https://www.openapis.org/)
 

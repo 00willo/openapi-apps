@@ -105,7 +105,7 @@ paths:
       operationId: Events_info
       description: >-
         If query isn't specified returns json array of available event names
-        that you can to subscribe, 
+        that you can to subscribe,
                 if query is specified you gonna subscribe to events
       parameters:
         - in: query
@@ -142,7 +142,7 @@ paths:
         The first request for particular folder should be with only query parameter 'path', only after that you can request data for retrive.
 
 
-        --- 
+        ---
 
          Accessible column names:
 
@@ -564,7 +564,7 @@ paths:
         The first request for started applications should be without any query parameters, only after that you can request data for retrive.
 
 
-        --- 
+        ---
 
          Accessible column names:
 

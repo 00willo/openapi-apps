@@ -242,7 +242,7 @@ paths:
         matter what the type of the asset group is. The asset group `type`
         changes when the assets are refreshed. Dynamic asset groups constantly
         refreshed their membership as assets are scanned whereas static asset
-        groups do not change membership automatically. 
+        groups do not change membership automatically.
 
         See the <a href="#section/Responses/SearchCriteria">Search Criteria</a> for more information on using dynamic criteria.
       parameters: []
@@ -7181,50 +7181,50 @@ paths:
       summary: Tag Search Criteria
       operationId: Tag_Search_Criteria
       description: >
-        Updates the search criteria associated with the tag. 
+        Updates the search criteria associated with the tag.
 
 
-        The following table outlines the search criteria fields and the available operators: 
+        The following table outlines the search criteria fields and the available operators:
 
-        | Field | Operators | 
+        | Field | Operators |
 
-        | ---------- | ---------------- | 
+        | ---------- | ---------------- |
 
-        | ip-address | is, is-not, in-range, not-in-range, is-like, not-like | 
+        | ip-address | is, is-not, in-range, not-in-range, is-like, not-like |
 
-        | ip-address-type | in, not-in | 
+        | ip-address-type | in, not-in |
 
-        | alternate-address-type | in | 
+        | alternate-address-type | in |
 
-        | host-name | is, is-not, starts-with, ends-with, contains, does-not-contain, is-empty, is-not-empty, is-like, not-like | 
+        | host-name | is, is-not, starts-with, ends-with, contains, does-not-contain, is-empty, is-not-empty, is-like, not-like |
 
-        | host-type | in, not-in | 
+        | host-type | in, not-in |
 
-        | operating-system | contains, does-not-contain, is-empty, is-not-empty | 
+        | operating-system | contains, does-not-contain, is-empty, is-not-empty |
 
-        | software | contains, does-not-contain| 
+        | software | contains, does-not-contain|
 
-        | open-ports | is, is-not, in-range | 
+        | open-ports | is, is-not, in-range |
 
-        | service-name | contains, does-not-contain | 
+        | service-name | contains, does-not-contain |
 
-        | risk-score | is, is-not, in-range, is-greater-than,is-less-than | 
+        | risk-score | is, is-not, in-range, is-greater-than,is-less-than |
 
-        | last-scan-date | is-on-or-before, is-on-or-after, is-between, is-earlier-than, is-within-the-last | 
+        | last-scan-date | is-on-or-before, is-on-or-after, is-between, is-earlier-than, is-within-the-last |
 
-        | vulnerability-assessed | is-on-or-before, is-on-or-after, is-between, is-earlier-than, is-within-the-last | 
+        | vulnerability-assessed | is-on-or-before, is-on-or-after, is-between, is-earlier-than, is-within-the-last |
 
-        | vulnerability-category | is, is-not, starts-with, ends-with, contains, does-not-contain| 
+        | vulnerability-category | is, is-not, starts-with, ends-with, contains, does-not-contain|
 
-        | vulnerability-cvss-score | is, is-not, in-range, is-greater-than, is-less-than | 
+        | vulnerability-cvss-score | is, is-not, in-range, is-greater-than, is-less-than |
 
-        | vulnerability-cvss-v3-score | is, is-not, in-range, is-greater-than, is-less-than | 
+        | vulnerability-cvss-v3-score | is, is-not, in-range, is-greater-than, is-less-than |
 
-        | vulnerability-exposures | includes, does not-include | 
+        | vulnerability-exposures | includes, does not-include |
 
-        | vulnerability-title | contains, does-not-contain, is, is-not, starts-with, ends-with | 
+        | vulnerability-title | contains, does-not-contain, is, is-not, starts-with, ends-with |
 
-        | cve | is, is-not, contains, does-not-contain | 
+        | cve | is, is-not, contains, does-not-contain |
 
         | cvss-access-complexity | is, is-not |
 
@@ -7252,145 +7252,145 @@ paths:
 
         | cvss-v3-privileges-required | is, is-not |
 
-        | mobile-device-last-sync | is-within-the-last, is-earlier-than | 
+        | mobile-device-last-sync | is-within-the-last, is-earlier-than |
 
-        | pci-compliance | is | 
+        | pci-compliance | is |
 
-        | site-id | in, not-in | 
+        | site-id | in, not-in |
 
-        | criticality-tag | is, is-not, is-greater-than, is-less-than, is-applied, is-not-applied | 
+        | criticality-tag | is, is-not, is-greater-than, is-less-than, is-applied, is-not-applied |
 
-        | custom-tag | is, is-not, starts-with, ends-with, contains, does-not-contain, is-applied, is-not-applied | 
+        | custom-tag | is, is-not, starts-with, ends-with, contains, does-not-contain, is-applied, is-not-applied |
 
-        | location-tag | is, is-not, starts-with, ends-with, contains, does-not-contain, is-applied, is-not-applied | 
+        | location-tag | is, is-not, starts-with, ends-with, contains, does-not-contain, is-applied, is-not-applied |
 
-        | owner-tag | is, is-not, starts-with, ends-with, contains, does-not-contain, is-applied, is-not-applied | 
+        | owner-tag | is, is-not, starts-with, ends-with, contains, does-not-contain, is-applied, is-not-applied |
 
-        | vulnerability-validated-status | are | 
+        | vulnerability-validated-status | are |
 
-        | vasset-cluster | is, is-not, contains, does-not-contain, starts-with | 
+        | vasset-cluster | is, is-not, contains, does-not-contain, starts-with |
 
-        | vasset-datacenter | is, is-not | 
+        | vasset-datacenter | is, is-not |
 
-        | vasset-host name | is, is-not, contains, does-not-contain, starts-with | 
+        | vasset-host name | is, is-not, contains, does-not-contain, starts-with |
 
-        | vasset-power state | in, not-in | 
+        | vasset-power state | in, not-in |
 
-        | vasset-resource pool path | contains, does-not-contain | 
+        | vasset-resource pool path | contains, does-not-contain |
 
-        | container-image | is, is-not, starts-with, ends-with, contains, does-not-contain, is-like, not-like | 
+        | container-image | is, is-not, starts-with, ends-with, contains, does-not-contain, is-like, not-like |
 
-        | container-status | is, is-not | 
+        | container-status | is, is-not |
 
-        | containers | are | 
+        | containers | are |
 
 
-        The following table outlines the operators and the values associated with them: 
+        The following table outlines the operators and the values associated with them:
 
-        | Operator | Values | 
+        | Operator | Values |
 
-        | -------- | ------ | 
+        | -------- | ------ |
 
-        | are | A single string property named "value" | 
+        | are | A single string property named "value" |
 
-        | is-between | A number property named "lower" and a number property named "upper" | 
+        | is-between | A number property named "lower" and a number property named "upper" |
 
-        | contains | A single string property named "value" | 
+        | contains | A single string property named "value" |
 
-        | does-not-contain | A single string property named "value" | 
+        | does-not-contain | A single string property named "value" |
 
-        | is-earlier-than | A single number property named "value" | 
+        | is-earlier-than | A single number property named "value" |
 
-        | ends-with | A single string property named "value" | 
+        | ends-with | A single string property named "value" |
 
-        | is-greater-than | A single number property named "value" | 
+        | is-greater-than | A single number property named "value" |
 
-        | in | An array property named "values" | 
+        | in | An array property named "values" |
 
-        | not-in | An array property named "values" | 
+        | not-in | An array property named "values" |
 
-        | in-range | A number property named "lower" and a number property named "upper" | 
+        | in-range | A number property named "lower" and a number property named "upper" |
 
-        | includes | An array property named "values" | 
+        | includes | An array property named "values" |
 
-        | is | A single string property named "value" | 
+        | is | A single string property named "value" |
 
-        | is-not | A single string property named "value" | 
+        | is-not | A single string property named "value" |
 
-        | is-applied | No value | 
+        | is-applied | No value |
 
-        | is-not-applied | No value | 
+        | is-not-applied | No value |
 
-        | is-empty | No value | 
+        | is-empty | No value |
 
-        | is-not-empty | No value | 
+        | is-not-empty | No value |
 
-        | is-less-than | A single number property named "value" | 
+        | is-less-than | A single number property named "value" |
 
-        | is-like | A single string property named "value" | 
+        | is-like | A single string property named "value" |
 
-        | does-not-contain | A single string property named "value" | 
+        | does-not-contain | A single string property named "value" |
 
-        | not-in-range | A number property named "lower" and a number property named "upper" | 
+        | not-in-range | A number property named "lower" and a number property named "upper" |
 
-        | not-like | A single string property named "value" | 
+        | not-like | A single string property named "value" |
 
-        | is-on-or-after | A single string property named "value", which is the date in ISO8601 format (yyyy-MM-dd) | 
+        | is-on-or-after | A single string property named "value", which is the date in ISO8601 format (yyyy-MM-dd) |
 
-        | is-on-or-before | A single string property named "value", which is the date in ISO8601 format (yyyy-MM-dd) | 
+        | is-on-or-before | A single string property named "value", which is the date in ISO8601 format (yyyy-MM-dd) |
 
-        | starts-with | A single string property named "value" | 
+        | starts-with | A single string property named "value" |
 
-        | is-within-the-last | A single number property named "value" | 
+        | is-within-the-last | A single number property named "value" |
 
 
-        The following fields have enumerated values: 
+        The following fields have enumerated values:
 
-        | Field | Acceptable Values | 
+        | Field | Acceptable Values |
 
-        | ----- | ----------------- | 
+        | ----- | ----------------- |
 
-        | containers | 0=present, 1=not present | 
+        | containers | 0=present, 1=not present |
 
-        | vulnerability-validated-status | 0=present, 1=not present | 
+        | vulnerability-validated-status | 0=present, 1=not present |
 
-        | pci-compliance | 0=fail, 1=pass | 
+        | pci-compliance | 0=fail, 1=pass |
 
-        | alternate-address-type | 0=IPv4, 1=IPv6 | 
+        | alternate-address-type | 0=IPv4, 1=IPv6 |
 
-        | ip-address-type | 0=IPv4, 1=IPv6 | 
+        | ip-address-type | 0=IPv4, 1=IPv6 |
 
-        | host-type | 0=Unknown, 1=Guest, 2=Hypervisor, 3=Physical, 4=Mobile | 
+        | host-type | 0=Unknown, 1=Guest, 2=Hypervisor, 3=Physical, 4=Mobile |
 
-        | cvss-access-complexity | L=Low, M=Medium, H=High | 
+        | cvss-access-complexity | L=Low, M=Medium, H=High |
 
-        | cvss-integrity-impact | N=None, P=Partial, C=Complete | 
+        | cvss-integrity-impact | N=None, P=Partial, C=Complete |
 
-        | cvss-confidentiality-impact | N=None, P=Partial, C=Complete | 
+        | cvss-confidentiality-impact | N=None, P=Partial, C=Complete |
 
-        | cvss-availability-impact | N=None, P=Partial, C=Complete | 
+        | cvss-availability-impact | N=None, P=Partial, C=Complete |
 
-        | cvss-access-vector | L=Local, A=Adjacent, N=Network | 
+        | cvss-access-vector | L=Local, A=Adjacent, N=Network |
 
-        | cvss-authentication-required | N=None, S=Single, M=Multiple | 
+        | cvss-authentication-required | N=None, S=Single, M=Multiple |
 
-        | cvss-access-complexity | L=Low, M=Medium, H=High | 
+        | cvss-access-complexity | L=Low, M=Medium, H=High |
 
-        | cvss-v3-confidentiality-impact | N=None, L=Low, H=High | 
+        | cvss-v3-confidentiality-impact | N=None, L=Low, H=High |
 
-        | cvss-v3-integrity-impact | N=None, L=Low, H=High | 
+        | cvss-v3-integrity-impact | N=None, L=Low, H=High |
 
-        | cvss-v3-availability-impact | N=None, L=Low, H=High | 
+        | cvss-v3-availability-impact | N=None, L=Low, H=High |
 
-        | cvss-v3-attack-vector | N=Network, A=Adjacent, L=Local, P=Physical | 
+        | cvss-v3-attack-vector | N=Network, A=Adjacent, L=Local, P=Physical |
 
-        | cvss-v3-attack-complexity | L=Low, H=High | 
+        | cvss-v3-attack-complexity | L=Low, H=High |
 
-        | cvss-v3-user-interaction | N=None, R=Required | 
+        | cvss-v3-user-interaction | N=None, R=Required |
 
-        | cvss-v3-privileges-required | N=None, L=Low, H=High | 
+        | cvss-v3-privileges-required | N=None, L=Low, H=High |
 
-        | container-status | created, running, paused, restarting, exited, dead, unknown | 
+        | container-status | created, running, paused, restarting, exited, dead, unknown |
       parameters:
         - in: path
           name: id

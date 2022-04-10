@@ -42,7 +42,7 @@ You'll need following for setting up Jira in shuffle workflow
 ## Note
 
 - In some actions you're required to fill out all paramters otherwise it'll throw an error sometimes.
-- When using Create issue action,Format for Due date parameter is yyyy-mm-dd. 
+- When using Create issue action,Format for Due date parameter is yyyy-mm-dd.
 - When using add attachment action, make sure you upload file in shuffle it self first goto Admin &#8594; Files &#8594; upload files & copy the file id. Use the same in file_id parameter. For more info refer [this](http://shuffler.io/docs/organizations#files)
 
 
@@ -90,5 +90,3 @@ https://user-images.githubusercontent.com/31187099/146586474-098a454d-c2ca-41cf-
 8. List all issues - List all issues
 
 https://user-images.githubusercontent.com/31187099/146586507-60d5eabd-5acd-4779-b1ad-9e93ec32b614.mp4
-
-

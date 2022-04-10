@@ -1,5 +1,5 @@
 # Domo App
-App for intreacting to Domo through shuffle. Currently supports dataset and page actions. 
+App for intreacting to Domo through shuffle. Currently supports dataset and page actions.
 
 ## Authentication
 To use this app, You'll need  access token. To get access token you'll need to get client id and client secret first.
@@ -28,4 +28,3 @@ $http_1.access_token
 
 ### Step 3: Use access token
 - Now use access token you got from the http app as an authentication for the Domo app.
-

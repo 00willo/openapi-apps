@@ -46,4 +46,3 @@ with open("%s_tmp.json" % fullname, "w+") as tmp:
     tmp.write(json.dumps(full_item))
 
 print(full_item)
-

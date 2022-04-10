@@ -6556,7 +6556,7 @@ paths:
 schemes:
 - 'https:'
 servers:
-- url: 
+- url:
 tags:
 - name: IAM
 - name: inventory

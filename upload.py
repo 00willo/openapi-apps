@@ -21,7 +21,7 @@ def upload(filename, category, apikey):
         "Authorization": "Bearer %s" % apikey,
         "Content-Type": "application/json",
     }
-    
+
     firsturl = "%s/api/v1/validate_openapi" % baseurl
     with open(filename, "r") as tmp:
         print("Uploading %s with category %s" % (filename, category))
@@ -47,9 +47,9 @@ def upload(filename, category, apikey):
             return
 
         test_json = ret2.json()
-        #try: 
+        #try:
         #    test_json["body"]["info"]["x-categories"] = [category]
-        #except: 
+        #except:
         #    continue
 
         #break
@@ -68,15 +68,15 @@ def upload(filename, category, apikey):
             print("Error uploading %s in step 3" % filename)
 
         #exit()
-    
+
             #print("RET3 SUCCESS!")
 
 
 
-# 1 mig    POST http://localhost:5001/api/v1/validate_openapi 
-# 2 setup. GET the ID 
+# 1 mig    POST http://localhost:5001/api/v1/validate_openapi
+# 2 setup. GET the ID
 #           http://localhost:5001/api/v1/get_openapi/5dc6d934e70b09599783e9b38492ae82
-# 3 build: POST http://localhost:5001/api/v1/verify_openapi 
+# 3 build: POST http://localhost:5001/api/v1/verify_openapi
 
 #filenames = {}
 #files = os.listdir(".")

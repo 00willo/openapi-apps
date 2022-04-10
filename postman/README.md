@@ -10,7 +10,7 @@ npm i postman-to-openapi -g
 Docs: https://joolfe.github.io/postman-to-openapi/
 
 2. **Run p2o (postman-2-openapi)**
-This example runs towards an Automox Postman Collection, translated to OpenAPI 
+This example runs towards an Automox Postman Collection, translated to OpenAPI
 ```
 ~/.npm-global/bin/p2o Automox\ API.postman_collection.json -f automox.yaml
 ```

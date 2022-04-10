@@ -356,9 +356,9 @@ paths:
           description: >-
             The fields to sort on, for example, `sort=date_created:desc`. If you
             specify multiple fields, fields must be separated by commas.
-            Sortable fields include:  
+            Sortable fields include:
 
-            * date_created  
+            * date_created
 
             * name
           required: false

@@ -31,5 +31,3 @@ try {
 } catch (err) {
   console.error("An error occured: ", err)
 }
-
-

@@ -6,7 +6,7 @@
     "count": {"type": "integer"},
     "next": {"type": ["string", "null"]},
     "results": {
-        "type": "array", 
+        "type": "array",
         "items": {
             "additionalProperties": false,
             "required": ["indicator", "title", "content", "type", "id", "description"],
@@ -239,7 +239,7 @@
     "count": {"type": "integer"},
     "next": {"type":  ["string", "null"]},
     "results": {
-      "type": "array", 
+      "type": "array",
       "items": {"type": "string"}},
     "previous": {"type":  ["string", "null"]}
   }
@@ -566,7 +566,7 @@
   "required": ["status"],
   "properties": {
     "status": {"type": "string"}
-  } 
+  }
 }
 ,{
   "$schema": "http://json-schema.org/draft-04/schema",
@@ -594,7 +594,7 @@
   "required": ["detail"],
   "properties": {
     "detail": {
-        "type": "array", 
+        "type": "array",
         "items": {
             "additionalProperties": false,
             "required": ["slug", "name", "description"],
@@ -605,7 +605,7 @@
             }
         }
     }
-  } 
+  }
 }
 ,{
     "detail": [
@@ -1724,4 +1724,3 @@
     }
   }
 }
-

@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Rumble 
+  title: Rumble
   description: Rumble Network Discovery API from
     https://app.swaggerhub.com/apis-docs/RumbleDiscovery/Rumble/2.0.3#/Organization/getOrganization
   version: "1.0"
